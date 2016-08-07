@@ -1,0 +1,107 @@
+/*--HEDEAR--*/
+.navbar{
+	margin-bottom: 0;
+}
+#banner .contenedor {
+	position: absolute;/*para que tome de referencia la posicion banner principal #banner*/
+	top: 50%;
+	left: 25%;
+	transform: translateX(-50%) translateY(-50%);/*para que se posicione en medio del banner*/
+	color: #fff;
+}
+#banner h2 {
+	font-size: 28px;
+}
+.articulo-princiapal {
+	text-align: center;
+}
+.jumbotron{
+	background: #333;
+	color: #fff;
+	padding: 20px;
+
+}
+.jumbotron .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.info-pet h4{
+	text-align: center;
+
+}
+.info-pet img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+	margin: auto;
+
+}
+/*--FOOTER--*/
+footer .container{
+	text-align: center;
+	display: flex; /*hacer el container flexible*/
+	justify-content: center; /*texto de contenido se centre*/
+	
+}
+.social 
+{
+	display: flex;   /*se alinear iconos al centro*/
+    flex-flow: row nowrap;
+}
+
+/* footer social icons */
+.social li {
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+
+	justify-content: center; /*el block se centre*/
+
+	
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+
+
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #2c3e50;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 0px;
+	color: #EDEFF1 !important;
+}
+/*media Querie para dispositvos moviles*/
+@media screen and (max-width: 768px){
+	.post .thumb{
+		width: 100%; /*para que la imagen abarque el 100%*/
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
